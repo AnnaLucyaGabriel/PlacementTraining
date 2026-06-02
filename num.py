@@ -1,0 +1,14 @@
+n=int(input())
+count=0
+org=n
+while(n>0):
+    n=n//10
+    count+=1
+s=0
+n=org
+while(n>0):
+    r=n%10
+    s+=r**count
+    n=n//10
+    count-=1
+print(s)
